@@ -1,0 +1,55 @@
+{
+    "name": "turbine-kreuzberg/spryker-sentry",
+    "type": "library",
+    "license": "MIT",
+    "description": "Enable Sentry.io in your Spryker Shop easily with this Package/SDK",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "authors": [
+        {
+            "name": "Jorge Murta",
+            "email": "jorge.murta@turbinekreuzberg.com"
+        },
+        {
+            "name": "Flávio Rosa",
+            "email": "flavio.rosa@turbinekreuzberg.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TurbineKreuzberg\\": "src/TurbineKreuzberg/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TurbineTest\\": "tests/TurbineTest/",
+            "Generated\\": "src/Generated/"
+        }
+    },
+    "require": {
+        "php": ">=7.3",
+        "sentry/sdk": "^3.1",
+        "spryker/kernel": "^3.54.0",
+        "spryker/monitoring": "^2.2"
+    },
+    "require-dev": {
+        "codeception/module-asserts": "^1.3",
+        "fond-of-codeception/spryker": "^1.1",
+        "spryker/code-sniffer": "^0.16.0",
+        "spryker/container": "*",
+        "spryker/testify": "*"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "test": "codecept run",
+        "cs-check": "phpcs -p -s --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/TurbineKreuzberg/ tests/",
+        "cs-fix": "phpcbf -p --standard=vendor/spryker/code-sniffer/Spryker/ruleset.xml src/TurbineKreuzberg/ tests/"
+    }
+}
