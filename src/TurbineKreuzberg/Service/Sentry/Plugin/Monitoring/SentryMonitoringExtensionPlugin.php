@@ -68,7 +68,6 @@ class SentryMonitoringExtensionPlugin extends AbstractPlugin implements Monitori
 
         $transaction = $this->getService()->startTransaction($context);
         $this->getService()->setSpan($transaction);
-
     }
 
     /**

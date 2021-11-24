@@ -76,6 +76,8 @@ class SentryService extends AbstractService implements SentryServiceInterface
 
     /**
      * @param \Sentry\Tracing\Span|null $span
+     *
+     * @return void
      */
     public function setSpan(?Span $span): void
     {
