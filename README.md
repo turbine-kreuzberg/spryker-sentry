@@ -1,10 +1,10 @@
 # Spryker Sentry
 
 ## About the package
-This package enables sentry to work with your SprykerShop by extending the Monitoring Module of Spryker and adding other hooks to here and there to enhance the data in Sentry.
+This package enables [Sentry.io](https://sentry.io) to work with your [Spryker](https://spryker.com) shop by extending the Monitoring Module of Spryker and adding other hooks to here and there to enhance the data in Sentry.
 
 ### Features
-- Integration of Sentry with the Spryker Monitoring Module
+- Integration of [Sentry.io](https://sentry.io) with the Spryker [Monitoring Module](https://github.com/spryker/monitoring)
 - Possibility to ignore certain Exceptions with a configuration key
 
 ## Installation
@@ -12,15 +12,14 @@ This package enables sentry to work with your SprykerShop by extending the Monit
 To get the latest version, simply require the package using [Composer](https://getcomposer.org):
 
 ```bash
-composer require turbinekreuzberg/spryker-sentry
+composer require turbine-kreuzberg/spryker-sentry
 ```
 
 ### Configuration
-Add the `Turbine` namespace to the `CORE_NAMESPACES` in your `config/Shared/config_default.php` file and configure the Sentry DSN:
+Add the `TurbineKreuzberg` namespace to the `PROJECT_NAMESPACES` in your `config/Shared/config_default.php` file and configure the Sentry DSN:
 
 ```php
 $config[KernelConstants::PROJECT_NAMESPACES] = [
-    // ...
     'TurbineKreuzberg',
     // ...
 ];
