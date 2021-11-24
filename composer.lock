@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "902febdd3966a4d7b504c73a9b175af7",
+    "content-hash": "7723db4f98675de6ccd39ab40dedb353",
     "packages": [
         {
             "name": "clue/stream-filter",
@@ -8779,16 +8779,16 @@
         },
         {
             "name": "fond-of-codeception/spryker",
-            "version": "1.1.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fond-of/codeception-spryker.git",
-                "reference": "bebd4be74b4fac8b14d2d2a7361dae30d7eb66c9"
+                "reference": "e0d145e2593c7a6755f79b476383725ae731b4a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fond-of/codeception-spryker/zipball/bebd4be74b4fac8b14d2d2a7361dae30d7eb66c9",
-                "reference": "bebd4be74b4fac8b14d2d2a7361dae30d7eb66c9",
+                "url": "https://api.github.com/repos/fond-of/codeception-spryker/zipball/e0d145e2593c7a6755f79b476383725ae731b4a0",
+                "reference": "e0d145e2593c7a6755f79b476383725ae731b4a0",
                 "shasum": ""
             },
             "require": {
@@ -8807,6 +8807,7 @@
             "autoload": {
                 "psr-4": {
                     "Generated\\": "src/Generated",
+                    "Orm\\": "src/Orm",
                     "FondOfCodeception\\": "src/FondOfCodeception",
                     "Propel\\Generator\\Behavior\\Synchronization\\": "src/Propel/Generator/Behavior/Synchronization"
                 }
@@ -8824,9 +8825,9 @@
             "description": "Spryker module for codeception",
             "support": {
                 "issues": "https://github.com/fond-of/codeception-spryker/issues",
-                "source": "https://github.com/fond-of/codeception-spryker/tree/1.1.0"
+                "source": "https://github.com/fond-of/codeception-spryker/tree/1.2.1"
             },
-            "time": "2021-03-15T05:45:11+00:00"
+            "time": "2021-09-14T11:07:10+00:00"
         },
         {
             "name": "fzaninotto/faker",
