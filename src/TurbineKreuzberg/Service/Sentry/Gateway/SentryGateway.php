@@ -28,11 +28,11 @@ class SentryGateway
     /**
      * @param \Throwable $exception
      *
-     * @return void
+     * @return \Sentry\EventId|null
      */
-    public function captureException(Throwable $exception): void
+    public function captureException(Throwable $exception)
     {
-        $this->sentryHub->captureException($exception);
+        return $this->sentryHub->captureException($exception);
     }
 
     /**

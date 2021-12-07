@@ -39,7 +39,11 @@ class SentryExceptionHandler
             return;
         }
 
-        $this->sentryGateway->captureException($throwable);
+        $eventId = $this->sentryGateway->captureException($throwable);
+
+        if ($eventId === null) {
+            $this->sentryGateway->captureException(UnreportableException::fromThrowable($throwable));
+        }
     }
 
     /**

@@ -15,3 +15,4 @@ $config[SentryConstants::IGNORED_EXCEPTIONS] = [
     ErrorException::class,
 ];
 
+$config[SentryConstants::APPLICATION_VERSION] = '1.0.0';

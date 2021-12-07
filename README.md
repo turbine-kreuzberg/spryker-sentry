@@ -46,7 +46,24 @@ class MonitoringDependencyProvider extends SprykerMonitoringDependencyProvider
             // ...
         ];
     }
-
 }
+```
 
+## Additional Configurations
+You can adjust some configurations on the sentry module by adding some of this lines to your config file (ex. config_default.php):
+```php
+// You can ignore certain exceptions by adding them to this array
+$config[SentryConstants::IGNORED_EXCEPTIONS] = [
+    ErrorException::class, // Example
+];
+
+// You can set your application version so that it gets reported to sentry
+$config[SentryConstants::APPLICATION_VERSION] = '1.0.0';
+
+// You can even get it from an env variable
+$config[SentryConstants::APPLICATION_VERSION] = getenv('MY_APP_VERSION');
+
+// You can set the percentage of your requests that are going to be traced for
+// performance monitoring, value goes from 0 to 1, being 0.2 = 20%
+$config[SentryConstants::TRACE_SAMPLE_RATE] = 0.4;
 ```

@@ -4,6 +4,7 @@ namespace TurbineTest\Service\Sentry;
 
 use Codeception\Test\Unit;
 use Exception;
+use Sentry\EventId;
 use Sentry\State\HubInterface;
 use Sentry\Tracing\Transaction;
 use Sentry\Tracing\TransactionContext;
@@ -57,7 +58,24 @@ class SentryServiceTest extends Unit
         $mock
             ->expects($this->once())
             ->method('captureException')
-            ->with($exception);
+            ->with($exception)
+            ->willReturn(new EventId('3eaf8ee807450b5aea065aec50b95451'));
+
+        $this->getService()->captureException($exception);
+    }
+
+    /**
+     * @return void
+     */
+    public function testCaptureUnreportableExceptionReportsToSentry(): void
+    {
+        $mock = $this->createHubMock();
+        $exception = new Exception('example exception');
+
+        $mock
+            ->expects($this->exactly(2))
+            ->method('captureException')
+            ->willReturn(null);
 
         $this->getService()->captureException($exception);
     }

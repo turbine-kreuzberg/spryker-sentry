@@ -48,6 +48,7 @@ class SentryDependencyProvider extends AbstractBundleDependencyProvider
             $options = [
                 'environment' => $this->getConfig()->getApplicationEnvironment(),
                 'dsn' => $this->getConfig()->getDataSourceName(),
+                'release' => $this->getConfig()->getReleaseVersion(),
                 'traces_sample_rate' => $this->getConfig()->getTraceSampleRate(),
                 'capture_silenced_errors' => $this->getConfig()->getCaptureSilencedErrors(),
                 'error_types' => $this->getConfig()->getErrorTypes(),

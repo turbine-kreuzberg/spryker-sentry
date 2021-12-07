@@ -36,7 +36,7 @@ class SentryConfig extends AbstractBundleConfig
      */
     public function getReleaseVersion(): string
     {
-        return getenv('APP_VERSION') ?: 'development';
+        return $this->get(SentryConstants::APPLICATION_VERSION, 'development');
     }
 
     /**
