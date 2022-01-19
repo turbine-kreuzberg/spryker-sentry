@@ -20,4 +20,5 @@ interface SentryConstants
      * @var string
      */
     public const APPLICATION_VERSION = 'SENTRY:CONFIG:APPLICATION_VERSION';
+    public const CLASS_SERIALIZERS = 'SENTRY:CONFIG:CLASS_SERIALIZERS';
 }
