@@ -66,4 +66,13 @@ $config[SentryConstants::APPLICATION_VERSION] = getenv('MY_APP_VERSION');
 // You can set the percentage of your requests that are going to be traced for
 // performance monitoring, value goes from 0 to 1, being 0.2 = 20%
 $config[SentryConstants::TRACE_SAMPLE_RATE] = 0.4;
+
+// You can define custom serializers for complex objects like transfer objects
+// This will greatly enrich Sentry issues, making it possible to inspect object internal states across the backtrace
+// Note that you can use instances of classes that implement the __invoke method instead of a closure
+$config[SentryConstants::CLASS_SERIALIZERS] = [
+    Spryker\Shared\Kernel\Transfer\AbstractTransfer => function(Spryker\Shared\Kernel\Transfer\AbstractTransfer $data) {
+        return $data->toArray();
+    }
+];
 ```
