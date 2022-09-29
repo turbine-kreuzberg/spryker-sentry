@@ -29,8 +29,8 @@
     "require": {
         "php": ">=7.3",
         "sentry/sdk": "^3.1",
-        "spryker/kernel": "^3.54.0",
-        "spryker/monitoring": "^2.2"
+        "spryker/kernel": "^3",
+        "spryker/monitoring": "^2"
     },
     "require-dev": {
         "codeception/module-asserts": "^1.3",
