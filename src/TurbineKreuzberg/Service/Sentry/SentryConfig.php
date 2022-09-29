@@ -62,4 +62,12 @@ class SentryConfig extends AbstractBundleConfig
     {
         return false;
     }
+
+    /**
+     * @return array
+     */
+    public function getClassSerializers(): array
+    {
+        return $this->get(SentryConstants::CLASS_SERIALIZERS, []);
+    }
 }
