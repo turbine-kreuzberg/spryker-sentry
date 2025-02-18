@@ -24,7 +24,7 @@ class SentryConfig extends AbstractBundleConfig
     }
 
     /**
-     * @return string[]
+     * @return array<string>
      */
     public function getIgnoredExceptions(): array
     {
