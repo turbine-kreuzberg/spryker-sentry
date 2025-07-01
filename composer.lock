@@ -3064,16 +3064,16 @@
         },
         {
             "name": "spryker/kernel",
-            "version": "3.76.0",
+            "version": "3.79.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/kernel.git",
-                "reference": "0467b85ad410df4f21db752cccca92ebc2a3635e"
+                "reference": "e45495b436a8f42d12c18409793b7953d38209c5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/kernel/zipball/0467b85ad410df4f21db752cccca92ebc2a3635e",
-                "reference": "0467b85ad410df4f21db752cccca92ebc2a3635e",
+                "url": "https://api.github.com/repos/spryker/kernel/zipball/e45495b436a8f42d12c18409793b7953d38209c5",
+                "reference": "e45495b436a8f42d12c18409793b7953d38209c5",
                 "shasum": ""
             },
             "require": {
@@ -3119,9 +3119,9 @@
             ],
             "description": "Kernel module",
             "support": {
-                "source": "https://github.com/spryker/kernel/tree/3.76.0"
+                "source": "https://github.com/spryker/kernel/tree/3.79.0"
             },
-            "time": "2025-01-24T10:25:16+00:00"
+            "time": "2025-07-01T13:15:37+00:00"
         },
         {
             "name": "spryker/laminas",
