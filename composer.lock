@@ -12710,26 +12710,26 @@
         },
         {
             "name": "spryker/code-sniffer",
-            "version": "0.17.28",
+            "version": "0.17.30",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spryker/code-sniffer.git",
-                "reference": "3aaaf87343712bdc881ab8b1e6f1a62e9a1a619e"
+                "reference": "23a9bce83775a2e5e5d9aa793e809e3586751d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spryker/code-sniffer/zipball/3aaaf87343712bdc881ab8b1e6f1a62e9a1a619e",
-                "reference": "3aaaf87343712bdc881ab8b1e6f1a62e9a1a619e",
+                "url": "https://api.github.com/repos/spryker/code-sniffer/zipball/23a9bce83775a2e5e5d9aa793e809e3586751d61",
+                "reference": "23a9bce83775a2e5e5d9aa793e809e3586751d61",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.1",
+                "php": ">=8.2",
                 "phpstan/phpdoc-parser": "^1.33.0",
                 "slevomat/coding-standard": "^7.2.0 || ^8.0.1",
                 "squizlabs/php_codesniffer": "^3.6.2"
             },
             "require-dev": {
-                "phpstan/phpstan": "^1.0.0",
+                "phpstan/phpstan": "^1.11.0",
                 "phpunit/phpunit": "^9.5"
             },
             "bin": [
@@ -12765,7 +12765,7 @@
                 "issues": "https://github.com/spryker/code-sniffer/issues",
                 "source": "https://github.com/spryker/code-sniffer"
             },
-            "time": "2025-02-25T15:24:08+00:00"
+            "time": "2025-10-02T13:38:37+00:00"
         },
         {
             "name": "spryker/currency",
